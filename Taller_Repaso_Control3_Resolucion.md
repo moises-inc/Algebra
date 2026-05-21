@@ -53,10 +53,10 @@ Expresión: $(p \rightarrow r) \rightarrow [(p \rightarrow q) \vee \sim s]$
 2. El dato "11 personas consumen P y F" incluye a los que consumen los tres. Si $x = n(P \cap F \cap C)$, entonces $n(P \cap F \setminus C) = 11 - x$.
 3. La suma de todas las regiones de intersección (2 o 3 productos) es:
    
-   $$ \text{Intersecciones} = 6 + 3 + (11 - x) + x = 20 $$
+   $ \text{Intersecciones} = 6 + 3 + (11 - x) + x = 20 $
 5. Dado que $n(\text{Unión}) = n(\text{Solo 1}) + n(\text{Intersecciones})$:
    
-   $$ 50 = n(\text{Solo 1}) + 20 \implies n(\text{Solo 1}) = \mathbf{3 0} $$
+   $ 50 = n(\text{Solo 1}) + 20 \implies n(\text{Solo 1}) = \mathbf{3 0} $
 
 **Respuesta:** 30 personas (**Alternativa A**).
 
