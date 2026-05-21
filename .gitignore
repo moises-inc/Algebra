@@ -1,0 +1,15 @@
+# Python
+    3 __pycache__/
+    4 *.py[cod]
+    5 *.class
+    6 .venv/
+    7 .env
+    8
+    9 # Sistema
+   10 .DS_Store
+   11 Thumbs.db
+   12 *.log
+   13 *.tmp
+   14 EOF
+
+__pycache__/
