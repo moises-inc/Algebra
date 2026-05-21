@@ -287,7 +287,7 @@ $$c = \sqrt{327608.34} \approx 572 \text{ m}$$
 ![Esquema P22](./assets/trig_p22.png)
 
 **Desarrollo:**
-Sean $\alpha=28^\circ, \beta=52^\circ$ y la distancia total $d=8$m. La proyección del globo divide la base $d$ en $x$ y $8-x$.
+Sean $\alpha=28^\circ, \beta=52^\circ$ y la distancia total $d=8$ m. La proyección del globo divide la base $d$ en $x$ y $8-x$.
 1. $\tan(28^\circ) = \frac{h}{x} \implies x = \frac{h}{\tan(28^\circ)}$
 2. $\tan(52^\circ) = \frac{h}{8-x} \implies 8-x = \frac{h}{\tan(52^\circ)}$
 Sumando $x + (8-x)$:
