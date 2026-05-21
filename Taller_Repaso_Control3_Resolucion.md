@@ -1,123 +1,183 @@
-# Guía Pedagógica: Resolución Taller de Repaso Control 3
+# Solucionario Integral: Taller de Repaso Control 3 - Álgebra
 **Materia:** Lógica, Conjuntos y Trigonometría  
-**Objetivo:** Preparación Integral para Control 3 - Álgebra (USS)  
-**Estándar:** Rigor Algebraico Formal y Justificación Conceptual  
+**Docente:** Carol Asencio  
+**Resolución:** Gemini Academic Assistant  
 
 ---
 
-## Introducción Conceptual
-Esta guía no es solo un solucionario; es un mapa de razonamiento. Cada ejercicio se aborda desde sus **Axiomas** y **Leyes Fundamentales**, evitando el cálculo mecánico y priorizando la comprensión del lenguaje matemático.
+## Pregunta 1: Lógica Proposicional
+**Enunciado:** Se sabe que $(p \rightarrow \sim q) \vee (\sim r \rightarrow s)$ es falsa. Determinar el valor de verdad de:
+i. $[(\sim r \vee q) \wedge q] \leftrightarrow [(\sim q \vee r) \wedge s]$
+ii. $(p \rightarrow r) \rightarrow [(p \rightarrow q) \vee \sim s]$
 
----
-
-## I. Lógica Proposicional: La Estructura del Pensamiento
-
-### Pregunta 1: Análisis de Valores de Verdad
-> **Justificación Lógica:** En lógica proposicional, la **Disyunción ($A \lor B$)** tiene un comportamiento "inclusivo", pero es extremadamente restrictiva cuando es falsa: **ambas proposiciones deben ser falsas simultáneamente**.
-
-**Paso 1: Deducción de Atómicos**
-Se sabe que $(p \rightarrow \sim q) \vee (\sim r \rightarrow s) \equiv F$.
-- De $(p \rightarrow \sim q) \equiv F$, deducimos: $p = V$ y $\sim q = F \implies q = V$.
-- De $(\sim r \rightarrow s) \equiv F$, deducimos: $\sim r = V \implies r = F$ y $s = F$.
-
-**Paso 2: Evaluación**
-i. $[(\sim r \vee q) \wedge q] \leftrightarrow [(\sim q \vee r) \wedge s] \equiv [(V \vee V) \wedge V] \leftrightarrow [(F \vee F) \wedge F] \equiv V \leftrightarrow F \equiv \mathbf{F}$.
-ii. $(p \rightarrow r) \rightarrow [(p \rightarrow q) \vee \sim s] \equiv (V \rightarrow F) \rightarrow [(V \rightarrow V) \vee V] \equiv F \rightarrow V \equiv \mathbf{V}$.
+**Desarrollo:**
+1. $(p \rightarrow \sim q) \equiv F \implies p = V, q = V$.
+2. $(\sim r \rightarrow s) \equiv F \implies r = F, s = F$.
+- **Evaluación i:** $[(V \vee V) \wedge V] \leftrightarrow [(F \vee F) \wedge F] \equiv V \leftrightarrow F = \mathbf{F}$.
+- **Evaluación ii:** $(V \rightarrow F) \rightarrow [(V \rightarrow V) \vee V] \equiv F \rightarrow V = \mathbf{V}$.
 
 **Respuesta:** F y V (**Alternativa C**).
 
 ---
 
-## II. Teoría de Conjuntos: Cardinalidad y Regiones
+## Pregunta 2: Contradicciones Lógicas
+I. $(p \wedge \sim q) \leftrightarrow (p \rightarrow q) \equiv \neg(p \rightarrow q) \leftrightarrow (p \rightarrow q) \equiv \mathbf{F}$ (**Contradicción**).
+II. $(p \wedge \sim q) \wedge (p \vee q)$: Si $p=V, q=F \implies V \wedge V = V$ (No es contradicción).
+III. $\sim (p \Delta q) \rightarrow q$: Si $q=V \implies V$ (No es contradicción).
 
-### Pregunta 4: Análisis de Intersecciones
-> **Estrategia Pedagógica:** El error común es sumar directamente los datos. Debemos usar el principio de **Inclusión-Exclusión**. La clave es que "50 personas consumen al menos uno", lo que define el universo de nuestra unión $n(P \cup F \cup C) = 50$.
-
-![Diagrama de Venn P4](./assets/venn_p4.png)
-
-**Desarrollo Formal:**
-1. Definimos las regiones de intersección pura: $n(F \cap C \setminus P) = 6$ y $n(P \cap C \setminus F) = 3$.
-2. Sea $x$ la intersección triple $n(P \cap F \cap C)$. Entonces $n(P \cap F \setminus C) = 11 - x$.
-3. La suma de todas las regiones de intersección (2 o 3 productos) es:
-$$6 + 3 + (11 - x) + x = 20$$
-4. Dado que $n(\text{Unión}) = n(\text{Solo 1}) + n(\text{Intersecciones})$:
-$$50 = n(\text{Solo 1}) + 20 \implies n(\text{Solo 1}) = \mathbf{3 0}$$
-
-**Respuesta:** 30 personas (**Alternativa A**).
+**Respuesta:** Solo I (**Alternativa B**).
 
 ---
 
-## III. Trigonometría: Identidades y Ecuaciones
+## Pregunta 3: Operaciones con Conjuntos
+$A = ]-2, 5]$, $B = ]-6, 3[$, $C = [1, 2]$.
+1. $C - B = \emptyset$ (ya que $C \subset B$).
+2. $(C - B) \cup A = \emptyset \cup ]-2, 5] = ]-2, 5]$.
 
-### Pregunta 15: Simplificación Algebraica
-> **Justificación Conceptual:** El método más robusto es **reducir todo a Seno y Coseno**, lo que permite cancelaciones algebraicas directas.
+**Respuesta:** $]-2, 5]$ (**Alternativa D**).
 
-**Desarrollo Paso a Paso:**
-Sea $\alpha = 4x$:
-$$\frac{1 + \sec \alpha}{\sin \alpha + \tan \alpha} = \frac{1 + \frac{1}{\cos \alpha}}{\sin \alpha + \frac{\sin \alpha}{\cos \alpha}} = \frac{\frac{\cos \alpha + 1}{\cos \alpha}}{\frac{\sin \alpha \cos \alpha + \sin \alpha}{\cos \alpha}} = \frac{\cos \alpha + 1}{\sin \alpha (\cos \alpha + 1)} = \csc \alpha$$
+---
+
+## Pregunta 4: Problema de Encuestas (Venn)
+- $n(\text{Unión}) = 50$.
+- $n(F \cap C \setminus P) = 6$.
+- $n(P \cap C \setminus F) = 3$.
+- $n(P \cap F) = 11$.
+1. Suma regiones intersección: $6 + 3 + 11 = 20$.
+2. $n(\text{Solo 1}) = 50 - 20 = 30$.
+
+**Respuesta:** 30 (**Alternativa A**).
+
+---
+
+## Pregunta 5: Porcentajes de Patologías
+- $T=59, H=45, D=49, (T \cap H \cap D)=5$.
+- $(T \cap H)=17 \implies (T \cap H \setminus D)=12$.
+- $(H \cap D)=18 \implies (H \cap D \setminus T)=13$.
+- Solo $T=18 \implies (T \cap D \setminus H) = 59 - (18+12+5) = 24$.
+- Solo $H = 45 - (12+13+5) = 15$.
+- Solo $D = 49 - (24+13+5) = 7$.
+- Total Unión = $18+15+7+12+13+24+5 = 94\%$.
+- Exterior = $100\% - 94\% = 6\%$.
+
+**Respuesta:** 6% (**Alternativa C**).
+
+---
+
+## Pregunta 6, 7 y 8: Recetas Médicas
+- $n(A \cap B \setminus C) = 20$.
+- $n(\text{Solo } A) = 40$.
+- $n(A \setminus B) = 55 \implies n(A \cap C \setminus B) = 55 - 40 = 15$.
+- $n(A) = 100 \implies n(A \cap B \cap C) = 100 - (40+20+15) = 25$.
+- $n(\text{Solo } B) = 50$.
+- $n(B \cap C) = 60 \implies n(B \cap C \setminus A) = 60 - 25 = 35$.
+- $n(C) = 80 \implies n(\text{Solo } C) = 80 - (15+35+25) = 5$.
+
+6. $B \cap C \setminus A = \mathbf{3 5}$ (**Alternativa B**).
+7. $(A \cup C) \setminus B = 40 + 15 + 5 = \mathbf{6 0}$ (**Alternativa D**).
+8. Total = $100 + 50 + 5 + 35 = \mathbf{190}$ (**Alternativa A**).
+
+---
+
+## Pregunta 9: Valor de Verdad
+$p \implies (q \vee r) \equiv F \implies p=V, q=F, r=F$.
+- $p \vee (q \wedge \sim r) \equiv V \vee (F \wedge V) \equiv V \vee F = \mathbf{V}$.
+
+**Respuesta:** Es Verdadera (**Alternativa C**).
+
+---
+
+## Pregunta 10: Implicación Lógica
+$p \wedge \sim (q \vee r) \equiv V \implies p=V, q=F, r=F$.
+- $p \implies (\sim q \wedge r) \equiv V \rightarrow (V \wedge F) \equiv V \rightarrow F = \mathbf{F}$.
+
+**Respuesta:** Es Falsa (**Alternativa D**).
+
+---
+
+## Pregunta 11: Problema de Salud
+$n(A \cap B \setminus R) = n(A \cap B) - n(A \cap B \cap R) = 270 - 100 = 170$.
+
+**Respuesta:** 170 niños (**Alternativa B**).
+
+---
+
+## Pregunta 12 y 13: Diagramas de Venn
+12. Área sombreada: $(A \cup B) - C$ (**Alternativa C**).
+13. Área sombreada: $(A \cap B) - C$ (**Alternativa D**).
+
+---
+
+## Pregunta 14: Conjuntos con Valor Absoluto
+- $A = ]1, 2] \cup \{3\}$.
+- $B = \{x : |x-1| < 1\} = ]0, 2[$.
+- $C = \{x : -2 \le x < 1\} = [-2, 1[$.
+1. $B - C = ]0, 2[ \setminus [-2, 1[ = [1, 2[$.
+2. $(B - C) \cup A = [1, 2[ \cup (]1, 2] \cup \{3\}) = [1, 2] \cup \{3\}$.
+
+**Respuesta:** $[1, 2] \cup \{3\}$ (**Alternativa B**).
+
+---
+
+## Pregunta 15: Simplificación Trigonométrica
+$$\frac{1 + \sec(4x)}{\sin(4x) + \tan(4x)} = \frac{1 + \frac{1}{\cos(4x)}}{\sin(4x) + \frac{\sin(4x)}{\cos(4x)}} = \frac{\frac{\cos(4x) + 1}{\cos(4x)}}{\frac{\sin(4x) \cos(4x) + \sin(4x)}{\cos(4x)}} = \frac{\cos(4x) + 1}{\sin(4x) (\cos(4x) + 1)} = \frac{1}{\sin(4x)} = \csc(4x)$$
 
 **Respuesta:** $\csc(4x)$ (**Alternativa A**).
 
 ---
 
-### Pregunta 17: Perímetro de Polígono
-> **Justificación Conceptual:** Para hallar el perímetro de una figura irregular (trapecio), debemos descomponerla en un rectángulo y un triángulo rectángulo. Esto permite usar funciones trigonométricas básicas para encontrar los lados desconocidos.
+## Pregunta 16: Ecuación Trigonométrica
+$2 \cos^2(x) - \cos(x) = 0 \implies \cos(x)(2\cos(x) - 1) = 0$.
+1. $\cos(x) = 0 \implies x = \pi/2, 3\pi/2$.
+2. $\cos(x) = 1/2 \implies x = \pi/3, 5\pi/3$.
 
-**Desarrollo:**
-Dados $\alpha = 58^\circ$, $A = 24.6$ cm, y la condición $B = C$ (lado vertical igual a base superior).
-1. Hallamos la altura $B$: $B = A \cdot \sin(58^\circ) \approx 24.6 \cdot 0.848 = 20.86$ cm.
-2. Por condición, la base superior $C = 20.86$ cm.
-3. La base inferior $D$ se compone del cateto horizontal del triángulo más la base superior:
-$$D = C + A \cdot \cos(58^\circ) = 20.86 + 24.6 \cdot 0.530 \approx 20.86 + 13.04 = 33.90 \text{ cm}$$
-4. Perímetro $P = A + B + C + D = 24.6 + 20.86 + 20.86 + 33.90 = \mathbf{100.22} \text{ cm}$.
+**Respuesta:** $\{\pi/3, \pi/2, 3\pi/2, 5\pi/3\}$ (**Alternativa C**).
+
+---
+
+## Pregunta 17: Perímetro de Polígono
+1. Altura $B = 24.6 \cdot \sin(58^\circ) = 20.86$.
+2. Base $C = B = 20.86$.
+3. Base $D = 20.86 + 24.6 \cdot \cos(58^\circ) = 33.90$.
+4. $P = 24.6 + 20.86 + 20.86 + 33.90 = 100.22$.
 
 **Respuesta:** 100.22 cm (**Alternativa D**).
 
 ---
 
-### Pregunta 19: Identidades de Ángulo Doble
-> **Justificación Conceptual:** Al enfrentar ecuaciones con términos cúbicos y ángulos dobles, el primer paso es homogenizar los ángulos usando la identidad $\sin(2x) = 2 \sin x \cos x$.
+## Pregunta 18: Ecuaciones sin Solución
+I. $2 \cos^2 \theta + 5 \cos \theta + 2 = 0 \implies \cos \theta = -1/2$.
+II. $\tan(\theta/4) = -\sqrt{3} \implies \theta/4 = -\pi/3 + k\pi$.
+III. $2 \sin \theta - 1 = 3 \implies \sin \theta = 2$ (**Imposible**, $|\sin \theta| \le 1$).
 
-**Desarrollo:**
-$$\sin(2x) \cos x - 2 \sin^3 x = 0$$
-$$(2 \sin x \cos x) \cos x - 2 \sin^3 x = 0$$
-$$2 \sin x \cos^2 x - 2 \sin^3 x = 0$$
-$$2 \sin x (\cos^2 x - \sin^2 x) = 0$$
-Utilizando la identidad del coseno del ángulo doble $\cos(2x) = \cos^2 x - \sin^2 x$:
-$$2 \sin x \cos(2x) = 0$$
-
-**Soluciones en $[0, 2\pi]$:**
-1. $\sin x = 0 \implies x \in \{0, \pi, 2\pi\}$.
-2. $\cos(2x) = 0 \implies 2x \in \{\frac{\pi}{2}, \frac{3\pi}{2}, \frac{5\pi}{2}, \frac{7\pi}{2}\} \implies x \in \{\frac{\pi}{4}, \frac{3\pi}{4}, \frac{5\pi}{4}, \frac{7\pi}{4}\}$.
-
-**Respuesta:** Unión de ambos conjuntos (**Alternativa C**).
+**Respuesta:** Solo la III (**Alternativa B**).
 
 ---
 
-### Pregunta 21: Teorema del Coseno (Geodesia)
-> **Justificación Conceptual:** Cuando conocemos dos lados de un triángulo y el ángulo comprendido entre ellos, el **Teorema del Coseno** es la herramienta directa para hallar la distancia opuesta, actuando como una generalización de Pitágoras.
+## Pregunta 19: Identidades
+$\sin(2x) \cos x - 2 \sin^3 x = 0 \implies 2 \sin x \cos^2 x - 2 \sin^3 x = 0 \implies 2 \sin x \cos(2x) = 0$.
+1. $\sin x = 0 \implies 0, \pi, 2\pi$.
+2. $\cos(2x) = 0 \implies \pi/4, 3\pi/4, 5\pi/4, 7\pi/4$.
 
-**Desarrollo:**
-$$c^2 = a^2 + b^2 - 2ab \cos(C)$$
-$$c^2 = 450^2 + 550^2 - 2(450)(550) \cos(69^\circ)$$
-$$c^2 = 202500 + 302500 - 495000 \cdot 0.3584 \approx 327592$$
-$$c = \sqrt{327592} \approx \mathbf{572} \text{ m}$$
+**Respuesta:** Unión de soluciones (**Alternativa C**).
+
+---
+
+## Pregunta 20: Aplicación Pitágoras
+$d = \sqrt{4^2 + 3^2} = \sqrt{25} = 5$.
+
+**Respuesta:** 5 metros (**Alternativa B**).
+
+---
+
+## Pregunta 21: Teorema del Coseno
+$c = \sqrt{450^2 + 550^2 - 2(450)(550) \cos(69^\circ)} \approx \sqrt{327592} \approx 572$.
 
 **Respuesta:** 572 m (**Alternativa D**).
 
 ---
 
-### Pregunta 22: Altura mediante Triangulación
-> **Justificación Conceptual:** Este es un problema clásico de "dos estaciones". Planteamos un sistema de ecuaciones donde la altura $h$ es la variable común, relacionando las distancias horizontales mediante tangentes.
-
-![Esquema Trig P22](./assets/trig_p22.png)
-
-**Desarrollo:**
-Sea $x$ la distancia desde A hasta la proyección del globo. La distancia desde B será $8 - x$.
-1. $\tan(28^\circ) = \frac{h}{x} \implies x = \frac{h}{\tan(28^\circ)}$
-2. $\tan(52^\circ) = \frac{h}{8-x} \implies 8 - x = \frac{h}{\tan(52^\circ)}$
-Sumando ambas ecuaciones:
-$$8 = h \left( \frac{1}{\tan(28^\circ)} + \frac{1}{\tan(52^\circ)} \right)$$
-$$8 = h \cdot (1.8807 + 0.7813) \implies 8 = 2.662 \cdot h \implies h \approx \mathbf{3} \text{ m}$$
+## Pregunta 22: Altura del Globo
+$h = \frac{8}{\frac{1}{\tan(28^\circ)} + \frac{1}{\tan(52^\circ)}} = \frac{8}{1.8807 + 0.7813} = \frac{8}{2.662} \approx 3$.
 
 **Respuesta:** 3 metros (**Alternativa C**).
