@@ -51,7 +51,7 @@ Esta guía detalla la resolución formal del **Listado 6** siguiendo la **Direct
 ---
 
 ## 2. Determinación de Ángulos $\theta$ en Radianes
-> **Justificación Pedagógica:** Resolver la ecuación $\operatorname{f}(\theta) = c$ requiere el uso de funciones trigonométricas inversas (como el arcoseno, arcocoseno o arcotangente). Sin embargo, estas funciones inversas en calculadora devuelven únicamente el valor principal de su dominio restringido (valor de la rama principal). Para determinar la totalidad de las soluciones dentro de una circunferencia completa ($[0, 2\pi[$), es indispensable emplear la simetría de los cuadrantes del círculo unitario.
+> **Justificación Pedagógica:** Resolver la ecuación $f(\theta) = c$ requiere el uso de funciones trigonométricas inversas (como el arcoseno, arcocoseno o arcotangente). Sin embargo, estas funciones inversas en calculadora devuelven únicamente el valor principal de su dominio restringido (valor de la rama principal). Para determinar la totalidad de las soluciones dentro de una circunferencia completa ($[0, 2\pi[$), es indispensable emplear la simetría de los cuadrantes del círculo unitario.
 
 *   **a) $\sin \theta = 0.8$ en el primer cuadrante:**  
     *Desarrollo:* Aplicamos la función inversa del seno (arcoseno) directamente:  
