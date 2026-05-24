@@ -1,12 +1,12 @@
 # Resolución Formal de Ejercicios Clave: Listado 5 - Álgebra
 **Asignatura:** Álgebra (DCEX0007)  
 **Materia:** Lógica Proposicional y Teoría de Conjuntos  
-**Resolución:** Gemini Academic Assistant  
+**Resolución:** Revisor Matemático (Estándar de Oro Académico)  
 
 ---
 
 ## Introducción Conceptual
-Esta guía contiene las resoluciones detalladas paso a paso de los dos ejercicios teóricos y de demostración más importantes del **Listado 5**. Cada paso está acompañado de su correspondiente **Justificación Pedagógica** y de la explicitación de los teoremas y leyes de la lógica y la teoría de conjuntos que validan rigurosamente el desarrollo, alineándose con el estándar académico del curso.
+Esta guía contiene las resoluciones detalladas de los ejercicios más importantes de lógica proposicional y demostración del **Listado 5**. Cada paso está acompañado de su correspondiente justificación y de la explicitación de los teoremas y leyes de la lógica y la teoría de conjuntos que validan rigurosamente el desarrollo, alineándose con el estándar del curso y **sin recurrir a herramientas de cálculo infinitesimal**.
 
 ---
 
