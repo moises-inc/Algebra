@@ -1,6 +1,13 @@
---- 
-title: Lógica y conjuntos - Álgebra
-origin: Notion
+---
+id: "20260524-lgica-y-conjuntos-lgebra"
+title: "Lógica y conjuntos - Álgebra"
+project: "Estudios_Universidad"
+date: "2026-05-24T12:29:05"
+last_modified: "2026-05-30T19:03:58"
+type: "academic-note"
+status: "completed"
+priority: "medium"
+tags: ["#status/completed", "#project/Estudios_Universidad", "#course/lgebra"]
 ---
 
 ## **INFORMACIÓN RELEVANTE:**
@@ -86,6 +93,3 @@ origin: Notion
 # Implicancia
 
 — Dadas dos $$p$$ro$$p$$osiciones com$$p$$uestas $$p$$ y $$q$$, se dirá $$q$$ue **$$p$$**** im$$p$$lica a ****$$q$$**; sí solo sí; $$p$$→$$q$$ es una tautología.
-
-
-

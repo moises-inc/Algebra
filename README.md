@@ -1,3 +1,15 @@
+---
+id: "20260521-readme"
+title: "Readme"
+project: "Estudios_Universidad"
+date: "2026-05-21T16:37:48"
+last_modified: "2026-05-30T19:03:58"
+type: "academic-note"
+status: "completed"
+priority: "medium"
+tags: ["#status/completed", "#project/Estudios_Universidad", "#course/lgebra"]
+---
+
 # Algebra
 
 ## 📚 Uso Ético del Código y Prevención del Plagio (Norma APA 7ma Edición)

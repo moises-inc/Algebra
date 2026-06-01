@@ -1,3 +1,15 @@
+---
+id: "20260524-listado-5-resolucion"
+title: "Listado 5 resolucion"
+project: "Estudios_Universidad"
+date: "2026-05-24T12:30:27"
+last_modified: "2026-05-30T19:03:58"
+type: "academic-note"
+status: "completed"
+priority: "medium"
+tags: ["#status/completed", "#project/Estudios_Universidad", "#course/lgebra"]
+---
+
 # Resolución Formal de Ejercicios Clave: Listado 5 - Álgebra
 **Asignatura:** Álgebra (DCEX0007)  
 **Materia:** Lógica Proposicional y Teoría de Conjuntos  

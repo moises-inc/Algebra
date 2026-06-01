@@ -1,3 +1,15 @@
+---
+id: "20260524-taller-repaso-control3-resolucion"
+title: "Taller repaso control3 resolucion"
+project: "Estudios_Universidad"
+date: "2026-05-24T12:29:05"
+last_modified: "2026-05-30T19:03:58"
+type: "academic-note"
+status: "completed"
+priority: "medium"
+tags: ["#status/completed", "#project/Estudios_Universidad", "#course/lgebra"]
+---
+
 # Guía Pedagógica Definitiva: Taller de Repaso Control 3
 **Materia:** Lógica, Conjuntos y Trigonometría  
 **Docente:** Carol Asencio  

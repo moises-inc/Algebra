@@ -1,3 +1,15 @@
+---
+id: "20260524-listado-6-resolucion-completa"
+title: "Listado 6 resolucion completa"
+project: "Estudios_Universidad"
+date: "2026-05-24T12:37:53"
+last_modified: "2026-05-30T19:03:58"
+type: "academic-note"
+status: "completed"
+priority: "medium"
+tags: ["#status/completed", "#project/Estudios_Universidad", "#course/lgebra"]
+---
+
 # Guía de Estudio y Resolución Formal: Listado 6 - Álgebra
 **Asignatura:** Álgebra (DCEX0007)  
 **Temática:** Trigonometría Plana y Ecuaciones Trigonométricas  

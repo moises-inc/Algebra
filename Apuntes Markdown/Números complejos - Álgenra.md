@@ -1,6 +1,13 @@
---- 
-title: Números complejos - Álgenra
-origin: Notion
+---
+id: "20260524-nmeros-complejos-lgenra"
+title: "Números complejos - Álgenra"
+project: "Estudios_Universidad"
+date: "2026-05-24T12:29:05"
+last_modified: "2026-05-30T19:03:58"
+type: "academic-note"
+status: "completed"
+priority: "medium"
+tags: ["#status/completed", "#project/Estudios_Universidad", "#course/lgebra"]
 ---
 
 ## **INFORMACIÓN RELEVANTE:**
@@ -130,4 +137,3 @@ $$\text{Luego, dado la } \tan \Phi = \frac{1}{\sqrt{3}} , \text{ se tiene que } 
 $$\text{Así, } z = 2 \cdot \text{cis} \frac{\pi}{6}$$
 
 $$\text{Por De Moivre, se tiene que } \\ z^{8} = 2^{8} \cdot \text{cis} \left ( 8 \cdot \frac{\pi}{6}  \right ) \\ = 256 \cdot \text{cis} \left( \frac{4 \pi}{3}\right) \\ = 256 \cdot \left[ \cos \left( \frac{4 \pi}{3}\right) + i \sin \left( \frac{4 \pi}{3}\right) \right] \\ = 256 \cdot \left( -\frac{1}{2} - \frac{\sqrt{3}}{2} i \right) \\ \color{red} = - 128 - 128 \cdot \sqrt{3} i $$
-

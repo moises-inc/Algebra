@@ -1,6 +1,13 @@
---- 
-title: Álgebra - Álgebra básica y ecuaciones
-origin: Notion
+---
+id: "20260524-lgebra-lgebra-bsica-y-ecuaciones"
+title: "Álgebra - Álgebra básica y ecuaciones"
+project: "Estudios_Universidad"
+date: "2026-05-24T12:29:05"
+last_modified: "2026-05-30T19:03:58"
+type: "academic-note"
+status: "completed"
+priority: "medium"
+tags: ["#status/completed", "#project/Estudios_Universidad", "#course/lgebra"]
 ---
 
 ## **INFORMACIÓN RELEVANTE:**
@@ -161,4 +168,3 @@ $$p(x)=a_n  \cdot x^n + a_{n-1} \cdot x^{n-1} + \dots + a_1 \cdot x + a_0$$
 $$-(2x² - 5b) + 7x(x-b) + (5xb + 2x²) =  7x² + 5b - 2bx$$
 
 ### Producto entre polinomios
-
