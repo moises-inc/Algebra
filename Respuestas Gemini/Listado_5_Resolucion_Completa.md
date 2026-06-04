@@ -456,3 +456,6 @@ $$(p \Rightarrow q) \iff (p \lor q)$$
     2.  Antecedente (comer sano y hacer deporte): $q \land p$.
     3.  Consecuente (estar saludable): $r$.
     4.  Formalización final: $(q \land p) \Rightarrow r$. Esto corresponde a la opción **A**.
+
+
+[[Álgebra]]

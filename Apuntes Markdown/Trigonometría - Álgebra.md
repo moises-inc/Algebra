@@ -85,3 +85,5 @@ $$\cos²(-5\pi /6)=\frac1{\sin²{(-5\pi/6)}}=\frac{-\sqrt{3}/2}{-\sqrt{3}/2}=1$$
 — Luego, hay que remplazar los valores en el problema.
 
 $$\frac{-\sqrt{3}/2+ \sqrt{3}/2+1}{2/\sqrt{2}+1-1}= \frac{\sqrt{2}}{2-3\sqrt{3}}$$
+
+[[Álgebra]]

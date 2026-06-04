@@ -93,3 +93,5 @@ tags: ["#status/completed", "#project/Estudios_Universidad", "#course/lgebra"]
 # Implicancia
 
 — Dadas dos $$p$$ro$$p$$osiciones com$$p$$uestas $$p$$ y $$q$$, se dirá $$q$$ue **$$p$$**** im$$p$$lica a ****$$q$$**; sí solo sí; $$p$$→$$q$$ es una tautología.
+
+[[Álgebra]]

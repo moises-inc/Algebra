@@ -307,3 +307,6 @@ $$8 = h \left( \frac{1}{\tan 28^\circ} + \frac{1}{\tan 52^\circ} \right)$$
 $$8 = h \cdot (1.8807 + 0.7813) \implies 8 = 2.662 \cdot h \implies h \approx 3 \text{ m}$$
 
 **Respuesta:** 3 metros (**Alternativa C**).
+
+
+[[Álgebra]]

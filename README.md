@@ -46,3 +46,6 @@ Este proyecto se encuentra protegido bajo la **Licencia MIT**. Esto significa qu
 * Utilizar los resultados para tus evaluaciones académicas.
 
 **Condición obligatoria:** Al hacer uso de este software, te comprometes legalmente y académicamente a mantener el aviso de derechos de autor original y a otorgar los créditos correspondientes mediante la citación descrita anteriormente. El uso no declarado de estas herramientas se considerará una falta a la honestidad académica.
+
+
+[[Álgebra]]

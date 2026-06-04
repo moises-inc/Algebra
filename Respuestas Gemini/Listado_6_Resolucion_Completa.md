@@ -237,3 +237,6 @@ Esta guía detalla la resolución formal del **Listado 6** siguiendo la **Direct
             $$x = \mathbf{\frac{2\pi}{3} \text{ rad}}, \quad x = \mathbf{\frac{4\pi}{3} \text{ rad}}$$
     5.  **Unión de Conjuntos Solución:** Reunimos todas las soluciones ordenadas ascendentemente:  
         $$S = \{0, \frac{2\pi}{3}, \pi, \frac{4\pi}{3}\}$$
+
+
+[[Álgebra]]

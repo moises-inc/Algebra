@@ -168,3 +168,5 @@ $$p(x)=a_n  \cdot x^n + a_{n-1} \cdot x^{n-1} + \dots + a_1 \cdot x + a_0$$
 $$-(2x² - 5b) + 7x(x-b) + (5xb + 2x²) =  7x² + 5b - 2bx$$
 
 ### Producto entre polinomios
+
+[[Álgebra]]

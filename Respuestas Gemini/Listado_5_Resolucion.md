@@ -110,3 +110,6 @@ Sea $x$ un elemento arbitrario del universo de discurso.
 #### Conclusión:
 Dado que se ha establecido una cadena continua de equivalencias lógicas bicondicionales ($\iff$) desde el miembro izquierdo al derecho, queda formalmente demostrado que:
 $$A \setminus (B \cup C) = (A \setminus B) \cap (A \setminus C)$$
+
+
+[[Álgebra]]
