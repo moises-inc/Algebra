@@ -158,3 +158,7 @@ $$w_2 = 1 \cdot \text{cis} \left (  \frac{0+4\pi}{3}  \right ) = \text{cis} \lef
 
 $$\therefore S = \{w_0, w_1, w_2     \}$$
 
+---
+🔗 [[Álgebra]]
+
+

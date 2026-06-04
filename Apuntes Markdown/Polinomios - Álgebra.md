@@ -310,3 +310,7 @@ $$f(x) = \frac{x^4 - 3x^3 - 19x^2 + 4x + 18}{x^2 - 3x - 18}$$
 * **Paso 4: Expresar la solución completa.**
   Sustituyendo el cociente de la división y la descomposición obtenida:
   $$f(x) = x^2 - 1 + \frac{2/3}{x-6} + \frac{1/3}{x+3}$$
+
+---
+🔗 [[Álgebra]]
+

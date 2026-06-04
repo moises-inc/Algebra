@@ -120,3 +120,7 @@ $$\text{cociente }+ \frac{\text{resto}}{\text{divisor}}$$
 
 — Por lo tanto, queda repetir el mismo procedimiento para una función propia.
 
+---
+🔗 [[Álgebra]]
+
+
