@@ -1,244 +1,312 @@
----
-title: Polinomios y Progresiones - Álgebra
+--- 
+title: Polinomio y progresiones - Álgebra
 origin: Notion
 ---
 
 ## **INFORMACIÓN RELEVANTE:**
-— **Materia:** Álgebra Universitaria (Unidad 4).
-— **Objetivo:** Estudio riguroso y profundo de polinomios, fracciones parciales, y progresiones aritméticas/geométricas.
-— **Metodología:** Mapeo de conceptos teóricos complejos de la USS y la UdeC, enriquecido con ejercicios avanzados del listado práctico.
 
 ## **NOTAS:**
-— **Rigor Matemático:** Todos los desarrollos teóricos y prácticos de este apunte prescinden estrictamente de conceptos infinitesimales (límites, derivadas, integrales).
-— **Compatibilidad Notion:** Se han removido las ecuaciones inline con símbolo de dólar ($) debido a que el importador de Notion las rompe en múltiples líneas. Se utiliza tipografía matemática Unicode enriquecida (**𝕂, ℝ, ℂ, ℚ, ℤ, ℕ**, subíndices/superíndices y cursiva negrita) para el texto fluido, y bloques `$$` centrados para ecuaciones complejas, garantizando una importación perfecta y estética.
+— **Rigor Matemático:** Todos los desarrollos teóricos y prácticos de este apunte prescinden estrictamente de conceptos infinitesimales (límites, derivadas, integrales), fundamentándose de manera rigurosa en el álgebra clásica.
+— **Compatibilidad Notion:** Para asegurar una visualización óptima en la importación de Notion (evitando que las fórmulas en línea se rompan en múltiples renglones), no se utiliza el símbolo de dólar ($) en el texto fluido. En su lugar, se emplea tipografía matemática en Unicode enriquecida y formato de negrita-cursiva (por ejemplo, **𝕂**, **ℝ**, **ℂ**, **ℚ**, **ℤ**, **ℕ**, **ℕ₀**, ***p(x)***, ***x***). Las ecuaciones principales y desarrollos extensos se presentan en bloques centrados con doble signo de dólar `$$` garantizando una legibilidad excelente.
 
-# Parte I: Teoría de Polinomios en una Variable
+# Polinomios
 
-# 1. Definición y Estructura Algebraica
-
-## Definición de Polinomio
-— Sea **𝕂** un cuerpo (como los racionales **ℚ**, los reales **ℝ** o los complejos **ℂ**). Un **polinomio de una variable** con coeficientes en **𝕂** es una expresión formal de la forma:
-$$p(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0$$
+— Un **polinomio** de una variable ***x*** sobre un cuerpo **𝕂** (donde **𝕂** puede representar el cuerpo de los números racionales **ℚ**, reales **ℝ** o complejos **ℂ**) es una expresión formal de la forma:
+$$p(x)=a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0$$
+— O bien, denotado de forma compacta mediante sumatoria:
+$$p(x)= \sum^{n}_{i=0} a_i x^i$$
 — Donde:
-  * ***n*** ∈ **ℕ₀** es un entero no negativo.
-  * ***x*** es una variable o indeterminada (símbolo formal).
-  * ***aₖ*** ∈ **𝕂** son los **coeficientes** del polinomio.
-  * Cada término ***aₖ xᵏ*** es un **monomio** de grado ***k***.
-  * ***aₙ*** es el **coeficiente principal**. Si ***aₙ* = 1**, el polinomio se define como **mónico**.
-  * ***a₀*** es el **término libre** o término constante.
-— El conjunto de todos los polinomios en la variable ***x*** con coeficientes en el cuerpo **𝕂** se denota por **𝕂[x]**. 
+* ***n*** ∈ **ℕ₀** (el conjunto de los números naturales incluyendo el cero) representa el índice superior.
+* ***x*** es la indeterminada o variable formal (con ***x*** ∈ **𝕂**).
+* ***aᵢ*** ∈ **𝕂** son los **coeficientes** del polinomio para cada ***i*** ∈ {0, ..., ***n***}.
+* Cada término ***aᵢ xⁱ*** se denomina **monomio** de grado ***i***.
+* ***aₙ*** es el **coeficiente principal**. Si ***aₙ*** = 1, el polinomio se define como **mónico**.
+* ***a₀*** es el **término constante** o **libre**.
+— Si el coeficiente principal ***aₙ*** ≠ 0, se dice que el polinomio ***p(x)*** tiene **grado** ***n***, denotado algebraicamente como ***gr(p) = n***.
+— El conjunto de todos los polinomios en la variable ***x*** con coeficientes en el cuerpo **𝕂** se denota por la notación **𝕂[x]** (por ejemplo, **ℝ[x]** para coeficientes reales y **ℂ[x]** para coeficientes complejos).
+— Dado un polinomio constante no nulo ***p(x) = c*** (con ***c*** ∈ **𝕂** y ***c*** ≠ 0), este corresponde a un polinomio de grado 0. El polinomio nulo ***p(x) = 0*** no tiene grado definido en esta estructura.
 
-## Estructura de Anillo Conmutativo
-— Bajo las operaciones usuales de suma y producto, el conjunto **𝕂[x]** tiene estructura algebraica de **Anillo Conmutativo con Unidad**:
-  - El elemento neutro aditivo es el **polinomio nulo** ***p(x)* = 0**.
-  - El elemento neutro multiplicativo es el polinomio constante ***p(x)* = 1**.
-  - **Importante:** **𝕂[x]** **no** es un cuerpo, ya que los únicos elementos con inverso multiplicativo en **𝕂[x]** son los polinomios constantes no nulos (los elementos del cuerpo de coeficientes **𝕂**). Los polinomios de grado ≥ 1 no tienen inverso multiplicativo dentro de **𝕂[x]**.
+— **Estructura algebraica de Anillo Conmutativo:**
+* Bajo las operaciones usuales de adición y multiplicación de polinomios, el conjunto **𝕂[x]** posee una estructura de **Anillo Conmutativo con Elemento Unidad**.
+* El elemento neutro aditivo es el polinomio nulo ***p(x) = 0***.
+* El elemento neutro multiplicativo es el polinomio constante ***p(x) = 1***.
+* **Importante:** El conjunto **𝕂[x]** **no** es un cuerpo, ya que los únicos elementos que admiten inverso multiplicativo en **𝕂[x]** son los polinomios constantes no nulos (los elementos del cuerpo **𝕂**). Los polinomios de grado ***gr(p)*** ≥ 1 carecen de inverso dentro del anillo.
 
-## Grado de un Polinomio
-— Dado ***p(x)*** ∈ **𝕂[x]** tal que ***p(x)* ≠ 0**, el **grado** de ***p***, denotado por **gr(***p***)**, se define como el máximo exponente ***k*** tal que ***aₖ* ≠ 0**:
-$$\text{gr}(p) = \max\{k \in \mathbb{N}_0 : a_k \neq 0\}$$
-  - **Propiedad del producto:** **gr(***p* · *q***) = gr(***p***) + gr(***q***)**
-  - **Propiedad de la suma:** **gr(***p* + *q***) ≤ max{gr(***p***), gr(***q***)}**
-  - **Nota:** No se define grado para el polinomio nulo (***p(x)* = 0**).
+— **Propiedades del Grado:**
+* ***gr(p · q) = gr(p) + gr(q)***
+* ***gr(p + q) ≤ max{gr(p), gr(q)}***
 
-## Igualdad de Polinomios
-— Dos polinomios ***p(x)* = aₙ xⁿ + ... + a₀** y ***q(x)* = bₘ xᵐ + ... + b₀** son iguales si y solo si sus grados son idénticos y sus coeficientes homólogos son iguales uno a uno:
-$$p(x) = q(x) \iff n = m \ \wedge \ \forall k \in \{0, \dots, n\}: a_k = b_k$$
-
-— **Ejemplo de Aplicación (Igualdad):** Determinar ***A, B*** ∈ **ℝ** tales que:
+— **Igualdad de Polinomios:**
+* Dos polinomios ***p(x) = aₙ xⁿ + ... + a₀*** y ***q(x) = bₘ xᵐ + ... + b₀*** en **𝕂[x]** son idénticos si y solo si poseen el mismo grado y sus coeficientes correspondientes son iguales uno a uno:
+$$p(x) = q(x) \iff n = m \ \wedge \ \forall i \in \{0, \dots, n\}: a_i = b_i$$
+* *Ejemplo práctico:* Determinar los valores de ***A*** y ***B*** en **ℝ** tales que:
 $$(A + B)x^2 + 4x + 3 = 7x^2 + 4x + B$$
-— Por definición de igualdad de polinomios, igualamos los coeficientes de igual grado:
+* Igualando los coeficientes de igual grado en ambos lados:
 $$ \begin{aligned} x^2: & \quad A + B = 7 \\ x^1: & \quad 4 = 4 \\ x^0: & \quad 3 = B \end{aligned} $$
-— Sustituyendo ***B* = 3** en la primera ecuación:
-$$ A + 3 = 7 \implies \color{red}A = 4 $$
+* Sustituyendo ***B = 3*** en la primera ecuación:
+$$A + 3 = 7 \implies A = 4$$
 
-## Función Polinomial: Dominio y Recorrido
-— Todo polinomio ***p(x)*** ∈ **ℝ[x]** induce una **función polinomial** ***p* : ℝ → ℝ** mediante la regla de asignación de evaluar la indeterminada ***x*** en un número real.
-— **Dominio:** **Dom(***p***) = ℝ**, ya que las operaciones de suma y multiplicación son cerradas y están definidas para cualquier número real.
-— **Recorrido:** El conjunto imagen o recorrido **Rec(***p***)** está determinado algebraicamente por la paridad del grado:
-  * Si **gr(***p***)** es **impar**: El recorrido es todo el conjunto real, es decir, **Rec(***p***) = ℝ**.
-  * Si **gr(***p***)** es **par**: La función está acotada por un extremo global (máximo o mínimo) ***y₀*** ∈ **ℝ**.
-    - Si ***aₙ* > 0**, entonces **Rec(***p***) = [y₀, +∞)**.
-    - Si ***aₙ* < 0**, entonces **Rec(***p***) = (-∞, y₀]**.
+— **Función Polinomial: Dominio y Recorrido**
+* Todo polinomio ***p(x)*** ∈ **ℝ[x]** define una **función polinomial** ***p* : ℝ → ℝ** a través de la evaluación de la variable ***x*** en el conjunto real.
+* **Dominio:** ***Dom(p) = ℝ***, dado que las operaciones polinomiales (suma y producto) están siempre bien definidas para todo elemento del conjunto de los números reales.
+* **Recorrido:** El recorrido de la función, ***Rec(p)***, se define algebraicamente según la paridad de su grado:
+  * Si ***gr(p)*** es **impar**: El recorrido cubre a todos los números reales, es decir, ***Rec(p) = ℝ***.
+  * Si ***gr(p)*** es **par**: La función está acotada por un valor extremo global (mínimo o máximo absoluto) ***y₀*** ∈ **ℝ**.
+    - Si ***aₙ > 0***: El recorrido es ***Rec(p) = [y₀, +∞)***.
+    - Si ***aₙ < 0***: El recorrido es ***Rec(p) = (-∞, y₀]***.
 
----
+# Teorema del resto
 
-# 2. Algoritmos de División
+— **Algoritmo de la División de Polinomios:**
+Sean ***p(x)*** y ***d(x)*** dos polinomios en **𝕂[x]** con ***d(x)*** ≠ 0 (el divisor). Existen polinomios únicos ***c(x)*** (cociente) y ***r(x)*** (resto) en **𝕂[x]** tales que:
+$$p(x) = c(x) \cdot d(x) + r(x)$$
+Donde ***r(x) = 0*** o bien ***gr(r) < gr(d)***. En el caso en que el resto ***r(x) = 0***, se dice que ***p(x)*** es divisible por ***d(x)***.
 
-## Algoritmo de la División de Polinomios
-— Sean ***p(x), d(x)*** ∈ **𝕂[x]** con ***d(x)* ≠ 0** (el divisor). Existen polinomios únicos ***c(x)*** (cociente) y ***r(x)*** (resto) en **𝕂[x]** tales que:
-$$p(x) = c(x)d(x) + r(x)$$
-— Donde ***r(x)* = 0** o bien **gr(***r***) < gr(***d***)**. Si ***r(x)* = 0**, se dice que ***p(x)*** es divisible por ***d(x)***.
+— **Enunciado del Teorema del Resto:**
+El resto de la división de un polinomio ***p(x)*** ∈ **𝕂[x]** por un polinomio lineal de la forma ***x - a*** (donde ***a*** ∈ **𝕂**) es exactamente igual al valor obtenido al evaluar el polinomio en ***a***, es decir, ***r = p(a)***.
 
-## Regla de Ruffini (División Sintética)
-— Método abreviado para dividir un polinomio ***p(x)*** por un divisor de la forma lineal mónico ***d(x)* = x - a**.
+— **Demostración Analítica:**
+De acuerdo con el algoritmo de división, al dividir ***p(x)*** por el divisor lineal ***x - a***, se tiene:
+$$p(x) = c(x) \cdot (x - a) + r(x)$$
+Dado que el divisor ***x - a*** tiene grado 1, el resto ***r(x)*** debe tener grado estrictamente menor que 1 o ser el polinomio nulo. Por consiguiente, el resto es un término constante ***r*** ∈ **𝕂**. Evaluando la ecuación en ***x = a***:
+$$p(a) = c(a) \cdot (a - a) + r = c(a) \cdot 0 + r = r$$
+Por tanto, el residuo de la división es exactamente ***r = p(a)***.
 
-## **Caso Especial Avanzado (Divisor no Mónico):** ¿Cómo aplicar Ruffini si el divisor es de la forma ***s(x)* = cx - d**?
-— Si deseamos dividir ***p(x)*** por ***s(x)* = 3x - 2**:
-  1. Reescribimos el divisor factorizando el coeficiente principal:
-     $$s(x) = 3\left(x - \frac{2}{3}\right)$$
-  2. Aplicamos la regla de Ruffini usando la raíz ***a* = 2/3**, lo que produce un cociente intermedio ***c'(x)*** y un resto ***r***:
-     $$p(x) = c'(x)\left(x - \frac{2}{3}\right) + r$$
-  3. Reordenamos algebraicamente para recuperar el divisor original ***3x - 2***:
-     $$p(x) = \frac{c'(x)}{3}(3x - 2) + r$$
-  4. Por lo tanto, el cociente real es $\color{red}c(x) = \frac{c'(x)}{3}$ y el resto definitivo de la división es exactamente $\color{red}r$.
+— **División Sintética (Regla de Ruffini):**
+Es un algoritmo simplificado y eficiente para calcular de forma práctica el cociente y el resto al dividir un polinomio ***p(x)*** por un binomio de la forma mónico-lineal ***x - a***.
 
----
+— **Caso Especial Avanzado (Divisor no Mónico):**
+En situaciones donde el divisor lineal tiene la forma ***s(x) = cx - d*** (con ***c*** ≠ 1), la división sintética no se puede aplicar de forma directa. Para ello, se emplea el siguiente método algebraico:
+1. Reestructuramos el divisor factorizando su coeficiente principal:
+   $$s(x) = c \left(x - \frac{d}{c}\right)$$
+2. Aplicamos la regla de Ruffini utilizando la raíz del divisor, ***a = d/c***. Esto produce un cociente intermedio ***c'(x)*** y un resto constante ***r***:
+   $$p(x) = c'(x) \left(x - \frac{d}{c}\right) + r$$
+3. Reordenamos algebraicamente el producto para recuperar el divisor original ***cx - d***:
+   $$p(x) = \frac{c'(x)}{c} \cdot c \left(x - \frac{d}{c}\right) + r = \frac{c'(x)}{c} (cx - d) + r$$
+4. De este modo, concluimos que el cociente verdadero de la división es ***c(x) = c'(x) / c***, mientras que el resto definitivo es exactamente ***r*** (permaneciendo inalterado).
 
-# 3. Teoremas de Raíces y Factorización
+# Raíces de un polinomio
 
-## Teorema del Resto
-— El resto de dividir un polinomio ***p(x)*** ∈ **𝕂[x]** por el término lineal ***x - a*** es exactamente el valor de evaluar el polinomio en ***a***: ***r* = p(a)**.
-— **Demostración:** Por el algoritmo de división:
-$$p(x) = c(x)(x - a) + r \quad (\text{con } \text{gr}(r) < 1 \implies r \text{ es constante})$$
-— Evaluando la función en ***x = a***:
-$$p(a) = c(a)(a - a) + r = c(a) \cdot 0 + r = \color{red}r$$
+— **Definición de Raíz:**
+Se define formalmente como raíz (o cero) de un polinomio ***p(x)*** ∈ **𝕂[x]** a todo elemento ***c*** ∈ **𝕂** tal que al evaluar la función polinomial en ese punto se anula, es decir:
+$$p(c) = 0$$
 
-## Teorema del Factor
-— Un valor ***a*** ∈ **𝕂** es raíz de ***p(x)*** si y solo si el binomio ***x - a*** es un factor de ***p(x)*** (es decir, ***p(x)*** es divisible por ***x - a***).
+— **Observación (Teorema del Factor):**
+Un elemento ***c*** ∈ **𝕂** es raíz de ***p(x)*** si y solo si el binomio lineal ***(x - c)*** es un factor de ***p(x)***. Bajo esta circunstancia, el polinomio ***p(x)*** se puede escribir en la forma factorizada:
+$$p(x) = (x - c) \cdot h(x)$$
+Donde ***h(x)*** ∈ **𝕂[x]** es un polinomio de grado ***gr(p) - 1***.
+* *Demostración:* Si ***c*** es raíz de ***p(x)***, entonces ***p(c) = 0***. Por el Teorema del Resto, al dividir ***p(x)*** por ***x - c*** obtenemos un residuo constante ***r = p(c) = 0***, lo que implica que ***p(x) = (x - c) · h(x)***, demostrando la factorización. Recíprocamente, si ***p(x) = (x - c) · h(x)***, evaluar en ***x = c*** da ***p(c) = (c - c) · h(c) = 0***, confirmando que ***c*** es raíz.
 
-## Teorema de las Raíces Racionales
-— Sea ***p(x)* = aₙ xⁿ + ... + a₀** ∈ **ℤ[x]** un polinomio con **coeficientes enteros**. Si ***p/s*** ∈ **ℚ** es una raíz racional irreducible de ***p(x)*** (donde **mcd(***p*, *s***) = 1**), entonces:
-  * El numerador ***p*** es un divisor entero del término constante ***a₀***.
-  * El denominador ***s*** es un divisor entero del coeficiente principal ***aₙ***.
+## Herramienta para encontrar raíces racionales
 
-## **Estrategia para coeficientes racionales (ℚ[x]):**
-— Si el polinomio original pertenece a **ℚ[x]** (ej. coeficientes fraccionarios), multiplicamos la ecuación ***p(x)* = 0** por el mínimo común múltiplo (m.c.m.) de todos los denominadores. Esto produce un polinomio equivalente en **ℤ[x]** con idénticas raíces, permitiendo aplicar directamente el Teorema de las Raíces Racionales.
+— **Teorema de las Raíces Racionales:**
+Sea ***p(x) = aₙ xⁿ + aₙ₋₁ xⁿ⁻¹ + ... + a₁ x + a₀*** un polinomio con **coeficientes enteros** (***aᵢ*** ∈ **ℤ**). Si la fracción racional irreducible ***a/b*** ∈ **ℚ** (con ***mcd(a, b) = 1***) es raíz del polinomio ***p(x)***, entonces se cumplen las siguientes relaciones divisibilidad algebraicas:
+* El numerador ***a*** divide de forma exacta al término constante ***a₀*** (***a | a₀***).
+* El denominador ***b*** divide de forma exacta al coeficiente principal ***aₙ*** (***b | aₙ***).
 
-## Cantidad Exacta de Raíces (Corolario del TFA)
-— **Teorema Fundamental del Álgebra:** Todo polinomio no constante en **ℂ[x]** posee al menos una raíz en **ℂ**.
-— **Corolario:** Todo polinomio ***p(x)*** ∈ **ℂ[x]** de grado ***n* ≥ 1** tiene exactamente ***n*** raíces complejas (contadas con su multiplicidad).
+— **Importante:** Este teorema no determina directamente las raíces, sino que **solo proporciona los candidatos posibles** para ser raíces racionales del polinomio. Los candidatos se construyen mediante el cociente de los divisores correspondientes:
+$$\pm \frac{\text{Divisores de } a_0}{\text{Divisores de } a_n}$$
 
-## **Demostración Analítica por Inducción Matemática:**
-  * *Paso Base:* Para ***n* = 1**, el polinomio es de la forma ***p(x)* = a₁ x + a₀**. La ecuación ***a₁ x + a₀* = 0** posee como solución única ***x* = -a₀/a₁**, cumpliéndose que tiene exactamente ***1*** raíz.
-  * *Paso Inductivo:* Supongamos como hipótesis de inducción (H.I.) que todo polinomio de grado ***k*** posee exactamente ***k*** raíces complejas (contando multiplicidades).
-  * Sea ***p(x)*** un polinomio de grado ***k* + 1**. Por el Teorema Fundamental del Álgebra, ***p(x)*** posee al menos una raíz compleja, denotémosla por ***α*** ∈ **ℂ**.
-  * Por el Teorema del Resto, ***p(x)*** es divisible por ***x - α***:
-    $$p(x) = (x - \alpha) \cdot q(x)$$
-  * Dado que **gr(***p***) = k + 1** y el factor lineal tiene grado 1, el cociente ***q(x)*** tiene grado ***k***.
-  * Por la H.I., el polinomio ***q(x)*** posee exactamente ***k*** raíces en **ℂ**.
-  * Por ende, sumando la raíz ***α***, el polinomio ***p(x)*** posee exactamente ***k* + 1** raíces en **ℂ**.
-  * Por el Principio de Inducción Matemática, el corolario queda formalmente demostrado.
+— **Estrategia para coeficientes racionales (ℚ[x]):**
+Si el polinomio original posee coeficientes fraccionarios, se puede multiplicar la ecuación completa ***p(x) = 0*** por el mínimo común múltiplo (m.c.m.) de todos los denominadores. Esto da lugar a un polinomio equivalente con coeficientes enteros (perteneciente a **ℤ[x]**) con las mismas raíces exactas, permitiendo aplicar el teorema.
 
-## Teorema de las Raíces Complejas Conjugadas
-— Sea ***p(x)*** ∈ **ℝ[x]** un polinomio con coeficientes reales. Si ***z*** ∈ **ℂ** es raíz de ***p(x)***, entonces su conjugado ***z̄*** también es raíz de ***p(x)*** con la misma multiplicidad.
-— **Demostración:** Sea $$p(z) = \sum_{k=0}^n a_k z^k = 0$$ Aplicando conjugación compleja a ambos lados:
-$$\overline{p(z)} = \overline{0} \implies \overline{\sum_{k=0}^n a_k z^k} = 0$$
-— Por propiedades del conjugado (distribuye sobre la suma y producto):
-$$\sum_{k=0}^n \overline{a_k} (\overline{z})^k = 0$$
-— Dado que los coeficientes son reales (***aₖ*** ∈ **ℝ**), se cumple que $$\overline{a_k} = a_k$$. Así:
-$$\sum_{k=0}^n a_k (\overline{z})^k = 0 \implies p(\overline{z}) = 0$$
+— **Ejemplo de Aplicación:**
+Determinar las raíces racionales de ***p(x) = 2x³ - 3x² + 2x - 3***:
+1. Identificamos los coeficientes extremos: el término libre es ***a₀ = -3*** y el coeficiente principal es ***a₃ = 2***.
+2. Los divisores enteros correspondientes son:
+   * Divisores de ***a₀*** (candidatos a numerador ***a***): {±1, ±3}
+   * Divisores de ***a₃*** (candidatos a denominador ***b***): {±1, ±2}
+3. Construimos el conjunto de posibles raíces racionales ***a/b***:
+   $$\left\{ \pm 1, \pm 3, \pm \frac{1}{2}, \pm \frac{3}{2} \right\}$$
+4. Evaluamos estos candidatos en ***p(x)***:
+   * ***p(1) = 2(1)³ - 3(1)² + 2(1) - 3 = 2 - 3 + 2 - 3 = -2 ≠ 0***
+   * ***p(3/2) = 2(27/8) - 3(9/4) + 2(3/2) - 3 = 27/4 - 27/4 + 3 - 3 = 0***
+   Comprobamos que ***x = 3/2*** es una raíz racional del polinomio.
 
-## Reducibilidad e Irreducibilidad
-— Un polinomio ***p(x)*** ∈ **𝕂[x]** de grado ≥ 1 es **reducible** en **𝕂[x]** si existen ***g(x), h(x)*** ∈ **𝕂[x]** de grado ≥ 1 tales que ***p(x)* = g(x)h(x)**. Si no existen tales factores, es **irreducible**.
-  * **Criterio para grado 2 o 3:** Un polinomio de grado 2 o 3 es reducible en **𝕂[x]** si y solo si posee al menos una raíz en el cuerpo **𝕂**.
-  * **Corolarios en los Reales:**
-    - Todo polinomio en **ℝ[x]** de grado impar posee al menos una raíz real.
-    - Todo polinomio en **ℝ[x]** de grado ≥ 3 es reducible en **ℝ[x]**. Los únicos irreducibles en **ℝ[x]** son los lineales y los cuadráticos con discriminante negativo (**Δ < 0**).
+## Segunda herramienta
 
----
+— **Teorema de las Raíces Complejas Conjugadas:**
+Sea ***p(x)*** ∈ **ℝ[x]** un polinomio con **coeficientes reales**. Si el número complejo ***z*** ∈ **ℂ** es raíz de ***p(x)***, entonces su conjugado ***z̄*** también es raíz del polinomio ***p(x)*** con idéntica multiplicidad.
 
-# 4. Descomposición en Fracciones Parciales
+— **Demostración Analítica:**
+Asumiendo que ***z*** es raíz de ***p(x)***, tenemos la igualdad:
+$$p(z) = \sum_{k=0}^{n} a_k z^k = 0$$
+Aplicando la operación de conjugación compleja a ambos miembros de la ecuación:
+$$\overline{p(z)} = \overline{0} \implies \overline{\sum_{k=0}^{n} a_k z^k} = 0$$
+Por las propiedades algebraicas del conjugado complejo (el cual distribuye sobre la suma y el producto):
+$$\sum_{k=0}^{n} \overline{a_k} (\overline{z})^k = 0$$
+Dado que los coeficientes son números reales (***aₖ*** ∈ **ℝ**), sus conjugados son idénticos a los coeficientes originales (***āₖ = aₖ***). Esto nos permite simplificar la expresión a:
+$$\sum_{k=0}^{n} a_k (\overline{z})^k = 0 \implies p(\overline{z}) = 0$$
+Demostrando rigurosamente que ***z̄*** es también raíz de ***p(x)***.
 
-— Permite descomponer una fracción racional propia ***P(x) / Q(x)*** (donde **gr(***P***) < gr(***Q***)**) en una suma de fracciones algebraicas más simples. Si es impropia (**gr(***P***) ≥ gr(***Q***)**), primero realizamos la división polinomial.
+# Multiplicidad de una raíz
 
-## Los Cuatro Casos de Descomposición
+— **Definición de Multiplicidad:**
+Un elemento ***c*** ∈ **𝕂** es una raíz de **multiplicidad** ***k*** (donde ***k*** ∈ **ℕ**) de un polinomio ***p(x)*** ∈ **𝕂[x]** si el factor ***(x - c)ᵏ*** divide exactamente a ***p(x)***, pero ***(x - c)ᵏ⁺¹*** no lo divide. Esto equivale a escribir la factorización del polinomio como:
+$$p(x) = (x - c)^k \cdot s(x)$$
+Donde ***s(x)*** ∈ **𝕂[x]** es un polinomio tal que ***s(c)*** ≠ 0.
+* Si ***k*** = 1, la raíz se denomina **raíz simple**.
+* Si ***k*** = 2, la raíz se denomina **raíz doble** o de multiplicidad 2.
+* Si ***k*** > 1, la raíz se denomina **raíz múltiple**.
 
-### Caso 1: Factores lineales no repetidos en el denominador
-— Si ***Q(x) = (x - c₁)(x - c₂)...(x - cₙ)*** con todos los ***cₖ*** distintos:
-$$\frac{P(x)}{Q(x)} = \frac{A_1}{x - c_1} + \frac{A_2}{x - c_2} + \dots + \frac{A_n}{x - c_n}$$
+— **Ejemplo de Aplicación:**
+Sea el polinomio en **ℝ[x]**:
+$$p(x) = (x - 1)(x - 2)^3(x^2 + 1)$$
+* El valor ***x = 1*** es una raíz simple (multiplicidad 1), ya que ***p(x) = (x - 1) · s₁(x)*** donde ***s₁(1) = (1 - 2)³(1² + 1) = -2 ≠ 0***.
+* El valor ***x = 2*** es una raíz de multiplicidad 3 (raíz triple), ya que ***p(x) = (x - 2)³ · s₂(x)*** donde ***s₂(2) = (2 - 1)(2² + 1) = 5 ≠ 0***.
+* El factor cuadrático ***x² + 1*** no aporta raíces reales en **ℝ** (sus raíces complejas son ***i*** y ***-i***, ambas de multiplicidad 1 en **ℂ**).
 
-### Caso 2: Factores lineales repetidos
-— Si un factor lineal se repite, por ejemplo ***(x - c)ᵐ***:
-$$\frac{P(x)}{(x - c)^m} = \frac{A_1}{x - c} + \frac{A_2}{(x - c)^2} + \dots + \frac{A_m}{(x - c)^m}$$
+# Teorema fundamental del Álgebra
 
-### Caso 3: Factores cuadráticos irreducibles distintos
-— Si ***Q(x)*** contiene factores cuadráticos de la forma ***ax² + bx + c*** con **Δ < 0**:
-$$\frac{P(x)}{ax^2 + bx + c} = \frac{Ax + B}{ax^2 + bx + c}$$
+— **Enunciado del Teorema Fundamental del Álgebra (TFA):**
+Todo polinomio no constante ***p(x)*** ∈ **ℂ[x]** (es decir, de grado ***n*** ≥ 1) tiene al menos una raíz en el cuerpo de los números complejos **ℂ**.
 
-### Caso 4: Factores cuadráticos irreducibles repetidos
-— Si el factor cuadrático irreducible se repite ***s*** veces, ***(ax² + bx + c)ˢ***:
-$$\frac{P(x)}{(ax^2 + bx + c)^s} = \frac{A_1 x + B_1}{ax^2 + bx + c} + \frac{A_2 x + B_2}{(ax^2 + bx + c)^2} + \dots + \frac{A_s x + B_s}{(ax^2 + bx + c)^s}$$
+— **Corolario de Cantidad Exacta de Raíces:**
+Todo polinomio ***p(x)*** ∈ **ℂ[x]** de grado ***n*** ≥ 1 posee exactamente ***n*** raíces complejas, contadas con su multiplicidad.
 
-## **Ejemplo de Aplicación (Fracción Impropia y Caso 1):**
-— Descomponer en fracciones parciales la siguiente expresión racional (Listado 10, Ejercicio 19b):
+— **Demostración Analítica por Inducción Matemática:**
+Procedemos a demostrar la validez del corolario anterior mediante inducción matemática sobre el grado ***n*** del polinomio:
+* **Paso Base:** Para ***n = 1***, el polinomio tiene la forma ***p(x) = a₁ x + a₀*** (con ***a₁*** ≠ 0). La ecuación lineal ***a₁ x + a₀ = 0*** tiene una única raíz en **ℂ**, dada por ***x = -a₀/a₁***, de modo que posee exactamente 1 raíz.
+* **Paso Inductivo:** Supongamos como hipótesis de inducción (H.I.) que todo polinomio de grado ***k*** (con ***k*** ≥ 1) posee exactamente ***k*** raíces complejas (contando multiplicidades).
+* Consideremos ahora un polinomio ***p(x)*** de grado ***k + 1***.
+* Por el Teorema Fundamental del Álgebra, sabemos que ***p(x)*** posee por lo menos una raíz en **ℂ**, la cual denotamos como ***α***.
+* Por el Teorema del Factor, podemos expresar al polinomio como:
+  $$p(x) = (x - \alpha) \cdot q(x)$$
+* Dado que el factor lineal tiene grado 1, el polinomio cociente ***q(x)*** debe tener grado ***k*** (ya que ***gr(p) = gr(x - α) + gr(q) ⇒ k + 1 = 1 + gr(q) ⇒ gr(q) = k***).
+* Aplicando la H.I. al cociente ***q(x)*** de grado ***k***, este posee exactamente ***k*** raíces en **ℂ**.
+* Al incorporar el factor lineal ***(x - α)***, el polinomio completo ***p(x)*** cuenta con exactamente ***k + 1*** raíces complejas.
+* Por consiguiente, en virtud del principio de inducción, queda demostrado que todo polinomio de grado ***n*** tiene exactamente ***n*** raíces en **ℂ**.
+
+— **Regla de los Signos de Descartes:**
+Es una herramienta útil para estimar la naturaleza real de las raíces de un polinomio con coeficientes reales:
+* El número de **raíces reales positivas** es igual al número de variaciones de signo en los coeficientes del polinomio ***p(x)*** (omitiendo los coeficientes nulos), o menor que este en una cantidad par.
+* El número de **raíces reales negativas** se analiza de igual manera a través de los cambios de signo en los coeficientes del polinomio evaluado en su variable opuesta, ***p(-x)***.
+
+# Polinomios reducibles e irreducibles
+
+— **Definiciones Algebraicas:**
+* Un polinomio no constante ***p(x)*** ∈ **𝕂[x]** es **reducible** en **𝕂[x]** si existen dos polinomios ***g(x)***, ***h(x)*** ∈ **𝕂[x]**, ambos de grado mayor o igual a 1 (y menores que ***gr(p)***), tales que:
+  $$p(x) = g(x) \cdot h(x)$$
+* Un polinomio no constante ***p(x)*** ∈ **𝕂[x]** es **irreducible** en **𝕂[x]** si no puede descomponerse en el producto de dos polinomios no constantes de menor grado. En este caso, sus únicos factores son los elementos constantes y los múltiplos del propio polinomio.
+* Todo polinomio lineal (grado 1) es intrínsecamente irreducible en cualquier cuerpo **𝕂**.
+
+— **Propiedades según el Cuerpo de Coeficientes:**
+La reducibilidad de una expresión depende exclusivamente del conjunto numérico en el que se realice la factorización (el cuerpo **𝕂**):
+* **En el cuerpo complejo ℂ:**
+  Los únicos polinomios irreducibles en **ℂ[x]** son los lineales (grado 1). Cualquier polinomio de grado ***n*** ≥ 2 es reducible bajo este cuerpo.
+* **En el cuerpo real ℝ:**
+  Los únicos polinomios irreducibles en **ℝ[x]** son:
+  1. Los polinomios de grado 1.
+  2. Los polinomios de grado 2 (cuadráticos) cuyo discriminante es negativo (***Δ = b² - 4ac < 0***).
+  Todo polinomio en **ℝ[x]** de grado impar tiene al menos una raíz real, y cualquier polinomio de grado ***n*** ≥ 3 es reducible en **ℝ[x]**.
+* **Criterio de Reducibilidad para Grados 2 y 3:**
+  Un polinomio de grado 2 o 3 es reducible en **𝕂[x]** si y solo si posee al menos una raíz en **𝕂**.
+* **Caso de Grado Mayor o Igual a 4:**
+  Carecer de raíces reales en polinomios de grado 4 o superior no es condición suficiente para asegurar la irreducibilidad de la expresión.
+  * *Ejemplo Demostrativo:* Analizar el polinomio ***p(x) = x⁴ + 3x² + 2*** en **ℝ[x]**.
+    - La ecuación cuadrática correspondiente (realizando la sustitución ***u = x²***) se factoriza como:
+      $$u^2 + 3u + 2 = (u + 1)(u + 2)$$
+    - Deshaciendo la sustitución, obtenemos:
+      $$p(x) = (x^2 + 1)(x^2 + 2)$$
+    - Aunque los factores de grado 2, ***x² + 1*** y ***x² + 2***, no poseen raíces reales (por lo que ***p(x)*** carece de raíces reales), el polinomio original es reducible en **ℝ[x]** dado que se ha factorizado en dos polinomios de grado 2.
+
+# Función racional
+
+— Una **función racional** ***f*** es una función real cuya regla de asignación matemática se compone de la división o cociente de dos expresiones polinomiales:
+$$f(x) = \frac{p(x)}{g(x)}$$
+— Donde ***p(x)*** y ***g(x)*** son polinomios con coeficientes reales (***p(x)***, ***g(x)*** ∈ **ℝ[x]**) y ***g(x)*** no corresponde al polinomio nulo.
+
+— **Dominio de una Función Racional:**
+El dominio está constituido por todos los números reales exceptuando aquellos valores que anulan algebraicamente el denominador:
+$$\text{Dom}(f) = \{x \in \mathbb{R} : g(x) \neq 0\}$$
+
+— **Descomposición en Fracciones Parciales:**
+Consiste en descomponer una fracción racional en una suma de fracciones con denominadores más simples. Para efectuar la descomposición, se debe clasificar la fracción según la relación de grados:
+* **Fracción Propia:** Cuando el grado del numerador es estrictamente menor al grado del denominador, es decir, ***gr(p) < gr(g)***. La descomposición se plantea directamente.
+* **Fracción Impropia:** Cuando el grado del numerador es mayor o igual al del denominador, es decir, ***gr(p) ≥ gr(g)***. En este caso, se realiza una división polinomial previa.
+
+## Descomposición de fracciones
+
+### Caso 1, gr(p(x)) < gr(g(x))
+
+— Cuando la función racional es una fracción propia, el método consiste en factorizar el denominador ***g(x)*** en polinomios irreducibles reales (factores lineales y factores cuadráticos con discriminante negativo). Dependiendo de las raíces del denominador, se asocian términos a la descomposición general:
+
+1. **Factores lineales distintos:**
+   Si ***g(x)*** contiene un factor de la forma ***(x - c)*** con multiplicidad 1, se asocia una fracción simple:
+   $$\frac{A}{x - c}$$
+
+2. **Factores lineales repetidos:**
+   Si ***g(x)*** contiene un factor de la forma ***(x - c)ᵐ*** con multiplicidad ***m*** > 1, se asocia una suma de ***m*** fracciones parciales consecutivas:
+   $$\frac{A_1}{x - c} + \frac{A_2}{(x - c)^2} + \dots + \frac{A_m}{(x - c)^m}$$
+
+3. **Factores cuadráticos irreducibles distintos:**
+   Si ***g(x)*** contiene un factor cuadrático ***ax² + bx + d*** (con ***Δ < 0***) de multiplicidad 1, se asocia la fracción:
+   $$\frac{Ax + B}{ax^2 + bx + d}$$
+
+4. **Factores cuadráticos irreducibles repetidos:**
+   Si ***g(x)*** contiene un factor cuadrático ***(ax² + bx + d)ˢ*** (con ***Δ < 0***) con multiplicidad ***s*** > 1, se asocia una suma de ***s*** fracciones:
+   $$\frac{A_1 x + B_1}{ax^2 + bx + d} + \frac{A_2 x + B_2}{(ax^2 + bx + d)^2} + \dots + \frac{A_s x + B_s}{(ax^2 + bx + d)^s}$$
+
+— **Ejemplo Desarrollado (Factores Lineales Simples y Repetidos):**
+Descomponer en fracciones parciales la función propia:
+$$f(x) = \frac{5x^2 +15x+7}{(x-4)(x+3)^2}$$
+* **Paso 1: Planteamiento de la descomposición.**
+  Como el denominador contiene el factor lineal simple ***(x - 4)*** y el factor lineal repetido ***(x + 3)²***, planteamos:
+  $$\frac{5x^2 +15x+7}{(x-4)(x+3)^2} = \frac{A}{x-4} + \frac{B}{x+3} + \frac{C}{(x+3)^2}$$
+* **Paso 2: Eliminación de denominadores.**
+  Multiplicando por el mínimo común denominador ***(x - 4)(x + 3)²*** obtenemos la igualdad polinomial:
+  $$5x^2 +15x+7 = A(x+3)^2 + B(x+3)(x-4) + C(x-4)$$
+* **Paso 3: Obtención de las constantes.**
+  * **Método de los Valores Críticos (Evaluación):**
+    Evaluamos en las raíces reales para simplificar la obtención de las incógnitas:
+    - Evaluando en ***x = 4***:
+      $$5(4)^2 + 15(4) + 7 = A(4 + 3)^2 + B(0) + C(0) \implies 147 = 49A \implies A = 3$$
+    - Evaluando en ***x = -3***:
+      $$5(-3)^2 + 15(-3) + 7 = A(0) + B(0) + C(-3 - 4) \implies 7 = -7C \implies C = -1$$
+    - Evaluando en ***x = 0*** (utilizando los valores conocidos ***A = 3*** y ***C = -1***):
+      $$7 = 3(3)^2 + B(3)(-4) + (-1)(-4)$$
+      $$7 = 27 - 12B + 4 \implies 7 = 31 - 12B \implies 12B = 24 \implies B = 2$$
+  * **Método de Igualación de Coeficientes:**
+    Expandiendo algebraicamente los polinomios del miembro derecho:
+    $$5x^2 +15x+7 = A(x^2 + 6x + 9) + B(x^2 - x - 12) + C(x - 4)$$
+    $$5x^2 +15x+7 = (A + B)x^2 + (6A - B + C)x + (9A - 12B - 4C)$$
+    Igualando coeficientes homólogos se obtiene el sistema lineal de 3x3:
+    $$ \begin{aligned} A + B &= 5 \\ 6A - B + C &= 15 \\ 9A - 12B - 4C &= 7 \end{aligned} $$
+    Resolviendo el sistema se determinan exactamente los mismos valores: ***A = 3***, ***B = 2***, ***C = -1***.
+* **Paso 4: Expresión de la descomposición final.**
+  Sustituyendo las constantes obtenidas:
+  $$f(x) = \frac{3}{x-4} + \frac{2}{x+3} - \frac{1}{(x+3)^2}$$
+
+### Caso 2, gr(p(x)) >= gr(g(x))
+
+— Si la fracción racional es impropia, es decir, el grado del numerador es mayor o igual al grado del denominador, se realiza primero la división de polinomios para expresar la fracción en términos de una componente entera (cociente) y una fracción racional propia (resto dividido por divisor):
+$$\frac{p(x)}{g(x)} = \text{cociente}(x) + \frac{\text{resto}(x)}{g(x)}$$
+— Donde la fracción restante es siempre propia. A partir de allí, se procede a descomponer la fracción propia aplicando los criterios del Caso 1.
+
+— **Ejemplo Desarrollado Paso a Paso (Fracción Impropia):**
+Descomponer en fracciones parciales la siguiente expresión:
 $$f(x) = \frac{x^4 - 3x^3 - 19x^2 + 4x + 18}{x^2 - 3x - 18}$$
-— **Paso 1: División polinomial por ser fracción impropia** (ya que **4 ≥ 2**):
-  - Dividimos ***x⁴ - 3x³ - 19x² + 4x + 18*** por ***x² - 3x - 18***:
-    1. Termino principal: ***x⁴ : x² = x²***. Multiplicamos y restamos:
-       $$(x^4 - 3x^3 - 19x^2 + 4x + 18) - x^2(x^2 - 3x - 18) = -x^2 + 4x + 18$$
-    2. Siguiente término: ***-x² : x² = -1***. Multiplicamos y restamos:
-       $$(-x^2 + 4x + 18) - (-1)(x^2 - 3x - 18) = \color{red}x$$
-  - Obtenemos el cociente ***c(x) = x² - 1*** y el resto ***r(x) = x***. Por lo tanto:
-    $$f(x) = x^2 - 1 + \frac{x}{x^2 - 3x - 18}$$
-
-— **Paso 2: Factorizar el denominador de la fracción propia**
-  - Buscamos las raíces de ***x² - 3x - 18 = 0***. Mediante factorización directa:
-    $$x^2 - 3x - 18 = (x - 6)(x + 3)$$
-
-— **Paso 3: Plantear la descomposición en fracciones parciales (Caso 1)**
+* **Paso 1: Realizar la división polinomial.**
+  Dividimos el polinomio del numerador por el del denominador:
+  1. Dividiendo los términos de mayor exponente: ***x⁴ / x² = x²***. Multiplicamos y restamos del dividendo:
+     $$(x^4 - 3x^3 - 19x^2 + 4x + 18) - (x^4 - 3x^3 - 18x^2) = -x^2 + 4x + 18$$
+  2. Siguiente cociente de términos principales: ***-x² / x² = -1***. Multiplicamos y restamos:
+     $$(-x^2 + 4x + 18) - (-x^2 + 3x + 18) = x$$
+  Obtenemos el cociente ***c(x) = x² - 1*** y el resto ***r(x) = x***. Por lo tanto, reescribimos:
+  $$f(x) = x^2 - 1 + \frac{x}{x^2 - 3x - 18}$$
+* **Paso 2: Factorizar el denominador de la fracción propia.**
+  Factorizamos el polinomio del denominador mediante inspección directa de raíces:
+  $$x^2 - 3x - 18 = (x - 6)(x + 3)$$
+* **Paso 3: Plantear la descomposición de la fracción propia.**
+  Planteamos la descomposición asociada a factores lineales distintos:
   $$\frac{x}{(x-6)(x+3)} = \frac{A}{x-6} + \frac{B}{x+3}$$
-  - Multiplicamos por el denominador común:
-    $$x = A(x + 3) + B(x - 6)$$
-  - Evaluamos en los valores críticos (raíces) para despejar las constantes:
-    * Si ***x* = 6**:
-      $$6 = A(6 + 3) + B(0) \implies 9A = 6 \implies A = \frac{2}{3}$$
-    * Si ***x* = -3**:
-      $$-3 = A(0) + B(-3 - 6) \implies -9B = -3 \implies B = \frac{1}{3}$$
-
-— **Paso 4: Escribir el resultado final**
-  $$f(x) = \color{red}x^2 - 1 + \frac{2/3}{x-6} + \frac{1/3}{x+3}$$
-
-***
-
-# Parte II: Progresiones y Series (Álgebra y Sucesiones)
-
-— Una **sucesión** en **ℝ** es una función con dominio en los números naturales **ℕ** y recorrido en **ℝ**. La suma de los términos de una sucesión se define como una **serie**.
-
-# 5. Sucesiones y Series Aritméticas
-
-## Definición de Progresión Aritmética (P.A.)
-— Una progresión aritmética es una sucesión de números reales en la cual la diferencia entre dos términos consecutivos es constante. Esta constante se denomina **diferencia común** (***d***):
-$$a_k - a_{k-1} = d, \quad \forall k \ge 2$$
-— **Término General (***aₖ***):** El término ***k***-ésimo de una P.A. está dado por:
-$$a_k = a_1 + (k - 1)d, \quad \text{para } k \in \mathbb{N}$$
-
-## Serie Aritmética (Suma de términos)
-— La suma de los primeros ***n*** términos de una progresión aritmética (***Sₙ***) se calcula algebraicamente mediante:
-$$S_n = \frac{n(a_1 + a_n)}{2}$$
-
-— **Ejemplo de Aplicación:** Calcular la suma de los 100 primeros números naturales (1, 2, 3, ..., 100).
-— Los números naturales forman una P.A. con primer término ***a₁* = 1**, diferencia ***d* = 1** y término centésimo ***a₁₀₀* = 100**.
-— Aplicando la fórmula:
-$$S_{100} = \frac{100(1 + 100)}{2} = 50 \cdot 101 = \color{red}5050$$
-
----
-
-# 6. Sucesiones y Series Geométricas
-
-## Definición de Progresión Geométrica (P.G.)
-— Sucesión de números reales en la cual cada término se obtiene multiplicando el término anterior por una constante no nula denominada **razón común** (***r***):
-$$\frac{a_k}{a_{k-1}} = r, \quad \forall k \ge 2$$
-— **Término General (***aₖ***):** El término ***k***-ésimo de una P.G. está dado por:
-$$a_k = a_1 \cdot r^{k-1}, \quad \text{para } k \in \mathbb{N}$$
-
-## Serie Geométrica (Suma de términos)
-— La suma de los primeros ***n*** términos de una progresión geométrica (***Sₙ***), con ***r* ≠ 1**, está dada algebraicamente por:
-$$S_n = a_1 \frac{1 - r^n}{1 - r}$$
-
-## **Ejemplo de Aplicación (PDF Unidad 4):**
-— En una progresión geométrica, el tercer término es 1 y el sexto término es 27. Determinar la razón (***r***), el primer término (***a₁***) y la suma de los primeros seis términos (***S₆***).
-— **Paso 1: Planteamiento de las ecuaciones**
-  $$ \begin{aligned} a_3: & \quad a_1 \cdot r^2 = 1 \\ a_6: & \quad a_1 \cdot r^5 = 27 \end{aligned} $$
-
-— **Paso 2: Resolver el sistema algebraico**
-  - Dividimos la segunda ecuación por la primera:
-    $$\frac{a_1 \cdot r^5}{a_1 \cdot r^2} = \frac{27}{1} \implies r^3 = 27 \implies \color{red}r = 3$$
-  - Sustituimos ***r* = 3** en la primera ecuación para hallar ***a₁***:
-    $$a_1 \cdot 3^2 = 1 \implies 9a_1 = 1 \implies \color{red}a_1 = \frac{1}{9}$$
-
-— **Paso 3: Calcular la suma ***S₆*****
-  - Aplicamos la fórmula con ***a₁* = 1/9**, ***r* = 3** y ***n* = 6**:
-    $$S_6 = \frac{1}{9} \left( \frac{1 - 3^6}{1 - 3} \right) = \frac{1}{9} \left( \frac{1 - 729}{-2} \right) = \frac{1}{9} \left( \frac{-728}{-2} \right) = \frac{364}{9}$$
-  - Operando el cociente de enteros:
-    $$S_6 = \color{red}\frac{364}{9}$$
+  Multiplicando por el denominador común:
+  $$x = A(x + 3) + B(x - 6)$$
+  Evaluamos en los valores críticos del sistema:
+  - Para ***x = 6***:
+    $$6 = 9A \implies A = \frac{2}{3}$$
+  - Para ***x = -3***:
+    $$-3 = -9B \implies B = \frac{1}{3}$$
+* **Paso 4: Expresar la solución completa.**
+  Sustituyendo el cociente de la división y la descomposición obtenida:
+  $$f(x) = x^2 - 1 + \frac{2/3}{x-6} + \frac{1/3}{x+3}$$
