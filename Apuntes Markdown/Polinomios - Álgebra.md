@@ -7,7 +7,7 @@ origin: Notion
 
 ## **NOTAS:**
 — **Rigor Matemático:** Todos los desarrollos teóricos y prácticos de este apunte prescinden estrictamente de conceptos infinitesimales (límites, derivadas, integrales), fundamentándose de manera rigurosa en el álgebra clásica.
-— **Compatibilidad Notion:** Para asegurar una visualización óptima en la importación de Notion (evitando que las fórmulas en línea se rompan en múltiples renglones), no se utiliza el símbolo de dólar ($) en el texto fluido. En su lugar, se emplea tipografía matemática en Unicode enriquecida y formato de negrita-cursiva (por ejemplo, **𝕂**, **ℝ**, **ℂ**, **ℚ**, **ℤ**, **ℕ**, **ℕ₀**, ***p(x)***, ***x***). Las ecuaciones principales y desarrollos extensos se presentan en bloques centrados con doble signo de dólar `$$` garantizando una legibilidad excelente.
+— **Compatibilidad Notion:** Para asegurar una visualización óptima en la importación de Notion (evitando que las fórmulas en línea se rompan en múltiples renglones), no se utiliza el símbolo de dólar en el texto fluido. En su lugar, se emplea tipografía matemática en Unicode enriquecida y formato de negrita-cursiva (por ejemplo, **𝕂**, **ℝ**, **ℂ**, **ℚ**, **ℤ**, **ℕ**, **ℕ₀**, ***p(x)***, ***x***). Las ecuaciones principales y desarrollos extensos se presentan en bloques de ecuaciones centrados de doble signo, garantizando una legibilidad excelente.
 
 # Polinomios
 
