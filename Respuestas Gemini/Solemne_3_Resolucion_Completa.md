@@ -88,9 +88,9 @@ tags: ["#status/completed", "#project/Estudios_Universidad", "#course/lgebra"]
        * Argumento: Dado que la parte real es negativa y la imaginaria es positiva, se encuentra en el segundo cuadrante: ***θ₂*** = 180° - \arcsin(1/2) = 180° - 30° = 150°.
        * Por tanto, ***z₂*** = 1cis(150°).
     3. Efectuamos la división polar restando los argumentos:
-       $$\frac{z_1}{z_2} = \frac{3\operatorname{cis}(60^\circ)}{1\operatorname{cis}(150^\circ)} = 3\operatorname{cis}(60^\circ - 150^\circ) = 3\operatorname{cis}(-90^\circ)$$
+       $$\frac{z_1}{z_2} = \frac{3\text{cis}(60^\circ)}{1\text{cis}(150^\circ)} = 3\text{cis}(60^\circ - 150^\circ) = 3\text{cis}(-90^\circ)$$
     4. Pasando a forma binómica:
-       $$3\operatorname{cis}(-90^\circ) = 3(\cos(-90^\circ) + i\sin(-90^\circ)) = 3(0 + i(-1)) = -3i$$
+       $$3\text{cis}(-90^\circ) = 3(\cos(-90^\circ) + i\sin(-90^\circ)) = 3(0 + i(-1)) = -3i$$
 *   **Resultado:** Alternativa **c) -3***i***.
 
 ---
