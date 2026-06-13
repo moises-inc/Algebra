@@ -12,6 +12,11 @@ tags: ["#status/completed", "#project/Estudios_Universidad", "#course/lgebra"]
 
 # Algebra
 
+## 📋 Directivas del Proyecto
+
+Para mantener la consistencia en el desarrollo de apuntes, la nomenclatura de los archivos, el formato matemático (compatible con Notion y Obsidian) y la coordinación del calendario, por favor revisa el archivo de **[Directivas del Proyecto](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos actuales/Álgebra/DIRECTIVAS_PROYECTO.md)**.
+
+
 ## 📚 Uso Ético del Código y Prevención del Plagio (Norma APA 7ma Edición)
 
 Este repositorio ha sido creado con una finalidad estrictamente académica y colaborativa. En el marco de la **Ingeniería Civil Informática**, el uso, reutilización y adaptación de código fuente es una práctica habitual, siempre y cuando se respete la propiedad intelectual del autor original.

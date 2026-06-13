@@ -3,7 +3,7 @@ id: "20260524-trigonometra-lgebra"
 title: "Trigonometría - Álgebra"
 project: "Estudios_Universidad"
 date: "2026-05-24T12:29:05"
-last_modified: "2026-05-30T19:03:58"
+last_modified: "2026-06-05T11:30:00"
 type: "academic-note"
 status: "completed"
 priority: "medium"
@@ -81,8 +81,6 @@ $$\sec{(-\pi /4)} =\sec{(\pi /4)} = \frac{1}{\cos(\pi/4)}=\frac{1}{\frac{\sqrt2}
 $$\cot(-\pi/4)= \frac{ \cos(-\pi/4)} {\sin(-\pi/4)}= \frac{ \cos(\pi/4)} {-\sin(\pi/4)}=\frac{\frac{-\sqrt3}{2}}{\frac{-\sqrt3}{2}}=1$$
 
 $$\cos²(-5\pi /6)=\frac1{\sin²{(-5\pi/6)}}=\frac{-\sqrt{3}/2}{-\sqrt{3}/2}=1$$
-
-— Luego, hay que remplazar los valores en el problema.
 
 $$\frac{-\sqrt{3}/2+ \sqrt{3}/2+1}{2/\sqrt{2}+1-1}= \frac{\sqrt{2}}{2-3\sqrt{3}}$$
 
