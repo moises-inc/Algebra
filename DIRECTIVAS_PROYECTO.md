@@ -8,12 +8,12 @@ Este documento establece las directrices de organización, estructura de carpeta
 
 El repositorio de Álgebra está organizado de la siguiente manera:
 
-*   **`Teoría/`**: Contiene los archivos PDF oficiales con la materia del curso, organizados por unidades.
-*   **`Apuntes Markdown/`**: Resúmenes, síntesis y apuntes conceptuales redactados en Markdown. Están estructurados para ser importados a Notion y enlazados en Obsidian.
+*   **`Teoria/`**: Contiene los archivos PDF oficiales con la materia del curso, organizados por unidades, y los planes de estudio.
+*   **`Apuntes/`**: Resúmenes, síntesis y apuntes conceptuales redactados en Markdown. Están estructurados para ser importados a Notion y enlazados en Obsidian.
 *   **`Taller/`**:
     *   `Listados/`: Archivos PDF con las guías de ejercicios y talleres prácticos oficiales del curso.
     *   `Respuestas Oficiales/`: Archivos PDF con los solucionarios provistos por la cátedra.
-*   **`Respuestas Gemini/`**: Resoluciones formales paso a paso de guías y talleres, generadas por la IA para guiar el estudio práctico. Contiene además la carpeta `assets/` para recursos gráficos.
+*   **`Guias_Resueltas/`**: Resoluciones formales paso a paso de guías y talleres, generadas por la IA para guiar el estudio práctico. Contiene además la carpeta `assets/` para recursos gráficos.
 *   **`Evaluaciones/`**:
     *   `Controles/`: Enunciados y pautas de controles periódicos.
     *   `Solemnes/`: Enunciados y pautas de certámenes solemnes.
@@ -24,8 +24,8 @@ El repositorio de Álgebra está organizado de la siguiente manera:
 
 ## 🏷️ 2. Nomenclatura y Metadatos de Archivos
 
-### 2.1 Archivos en `Apuntes Markdown/`
-Deben nombrarse con el formato: `[Tema] - Álgebra.md` (ej. `Números complejos - Álgebra.md`).
+### 2.1 Archivos en `Apuntes/`
+Deben nombrarse usando minúsculas sin acentos, reemplazando espacios y caracteres especiales por guiones bajos (e.g., `Logica_y_conjuntos.md`, `Numeros_complejos.md`).
 Cada apunte debe comenzar con el siguiente bloque de metadatos YAML (frontmatter) y finalizar con el enlace `[[Álgebra]]`:
 
 ```yaml
@@ -42,7 +42,7 @@ tags: ["#status/completed", "#project/Estudios_Universidad", "#course/lgebra"]
 ---
 ```
 
-### 2.2 Archivos en `Respuestas Gemini/`
+### 2.2 Archivos en `Guias_Resueltas/`
 Deben nombrarse con el formato: `Listado_[Número]_Resolucion_Completa.md` o `Taller_Repaso_Control[N]_Resolucion.md`.
 Al igual que los apuntes, deben llevar el frontmatter YAML y terminar con el enlace `[[Álgebra]]` para mantener la consistencia en el grafo de conocimiento.
 

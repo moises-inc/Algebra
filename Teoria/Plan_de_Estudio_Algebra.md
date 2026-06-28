@@ -29,7 +29,7 @@ Este plan de estudios de alto rendimiento ha sido diseñado para optimizar la pr
 
 ### Semana 15 (08 de Junio al 14 de Junio)
 *   **Objetivo de la Semana**: Consolidación analítica de la Trigonometría Plana, determinación formal del dominio de validez en identidades y resolución de ecuaciones con funciones trigonométricas inversas.
-*   **Recursos USS**: [Teoría Unidad 3](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Teor%C3%ADa/Unidad%203%20Trigonometria%20y%20numeros%20complejos.pdf) (págs. 1-20), [Taller 7](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Taller/Listados/Listado%207%20-%20%C3%81lgebra%20%282026-1%29.pdf), [Listado 6](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Taller/Listados/Listado%206%20-%20%C3%81lgebra%20%282026-1%29.pdf) y [Taller de Repaso Control 3](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Taller/Listados/Taller%20de%20Repaso%20Control%203.pdf).
+*   **Recursos USS**: [Teoría Unidad 3](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Teoria/Unidad%203%20Trigonometria%20y%20numeros%20complejos.pdf) (págs. 1-20), [Taller 7](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Taller/Listados/Listado%207%20-%20%C3%81lgebra%20%282026-1%29.pdf), [Listado 6](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Taller/Listados/Listado%206%20-%20%C3%81lgebra%20%282026-1%29.pdf) y [Taller de Repaso Control 3](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Taller/Listados/Taller%20de%20Repaso%20Control%203.pdf).
 *   **Recursos UdeC**: [Listado 10 - AyT](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/Udec/Asignaturas%20pasadas/%C3%81lgebra%20y%20trigonometr%C3%ADa/Listados/2024-2/Listado%2010-AyT.pdf), [Listado 11 - AyT](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/Udec/Asignaturas%20pasadas/%C3%81lgebra%20y%20trigonometr%C3%ADa/Listados/2024-2/Listado%2011-AyT.pdf).
 
 | Día | Tema | Actividad / Meta | Recursos y Ejercicios Sugeridos |
@@ -45,7 +45,7 @@ Este plan de estudios de alto rendimiento ha sido diseñado para optimizar la pr
 
 ### Semana 16 (15 de Junio al 21 de Junio)
 *   **Objetivo de la Semana**: Análisis del cuerpo de los Números Complejos ($\mathbb{C}$), operaciones analíticas en forma binomial y polar, raíces de la unidad y preparación para el Control 4.
-*   **Recursos USS**: [Teoría Unidad 3](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Teor%C3%ADa/Unidad%203%20Trigonometria%20y%20numeros%20complejos.pdf) (págs. 21-31), [Taller 8](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Taller/Listados/Listado%208%20-%20%C3%81lgebra%20%282026-1%29.pdf).
+*   **Recursos USS**: [Teoría Unidad 3](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Teoria/Unidad%203%20Trigonometria%20y%20numeros%20complejos.pdf) (págs. 21-31), [Taller 8](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Taller/Listados/Listado%208%20-%20%C3%81lgebra%20%282026-1%29.pdf).
 *   **Recursos UdeC**: [Apuntes Complejos III](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/Udec/Asignaturas%20pasadas/%C3%81lgebra%20y%20trigonometr%C3%ADa/Apuntes/Apuntes%20notion%202024-1/N%C3%BAmeros%20complejos%20III%20%2805%20-%2006%20-%202024%29.pdf) y [Listado 12 - AyT](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/Udec/Asignaturas%20pasadas/%C3%81lgebra%20y%20trigonometr%C3%ADa/Listados/2024-2/Listado%2012-AyT.pdf).
 
 | Día | Tema | Actividad / Meta | Recursos y Ejercicios Sugeridos |
@@ -61,7 +61,7 @@ Este plan de estudios de alto rendimiento ha sido diseñado para optimizar la pr
 
 ### Semana 17 (22 de Junio al 28 de Junio)
 *   **Objetivo de la Semana**: Dominio del Álgebra de Polinomios (sobre el cuerpo $\mathbb{K}[x]$), teoremas fundamentales de factorización en reales y complejos, y el método formal de Descomposición en Fracciones Parciales.
-*   **Recursos USS**: [Teoría Unidad 4](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Teor%C3%ADa/Unidad%204%20Polinomios%20Y%20Progresiones.pdf) (págs. 1-13), [Taller 9](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Taller/Listados/Listado%209%20-%20%C3%81lgebra%20%282026-1%29.pdf).
+*   **Recursos USS**: [Teoría Unidad 4](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Teoria/Unidad%204%20Polinomios%20Y%20Progresiones.pdf) (págs. 1-13), [Taller 9](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Taller/Listados/Listado%209%20-%20%C3%81lgebra%20%282026-1%29.pdf).
 *   **Recursos UdeC**: [Listado 13 - AyT](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/Udec/Asignaturas%20pasadas/%C3%81lgebra%20y%20trigonometr%C3%ADa/Listados/2024-2/Listado%2013-AyT.pdf).
 
 | Día | Tema | Actividad / Meta | Recursos y Ejercicios Sugeridos |
@@ -77,7 +77,7 @@ Este plan de estudios de alto rendimiento ha sido diseñado para optimizar la pr
 
 ### Semana 18 (29 de Junio al 05 de Julio)
 *   **Objetivo de la Semana**: Estudio riguroso de Progresiones Aritméticas y Geométricas, sumatorias aplicadas y simulacros exhaustivos de la Solemne 3.
-*   **Recursos USS**: [Teoría Unidad 4](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Teor%C3%ADa/Unidad%204%20Polinomios%20Y%20Progresiones.pdf) (págs. 14-21).
+*   **Recursos USS**: [Teoría Unidad 4](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/USS/Ramos%20actuales/%C3%81lgebra/Teoria/Unidad%204%20Polinomios%20Y%20Progresiones.pdf) (págs. 14-21).
 *   **Recursos UdeC**: [Clase 13 - Inducción](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/Udec/Asignaturas%20pasadas/%C3%81lgebra%20y%20trigonometr%C3%ADa/Apuntes/Apuntes%20notion%202024-1/Clase%2013%20de%20AyT%20Principio%20de%20Induccio%CC%81n.pdf), [Clase 14 - Sumatorias](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/Udec/Asignaturas%20pasadas/%C3%81lgebra%20y%20trigonometr%C3%ADa/Apuntes/Apuntes%20notion%202024-1/Clase%2014%20AyT%20Sumatorias%20.pdf), [Clase 15 - Progresiones](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/Udec/Asignaturas%20pasadas/%C3%81lgebra%20y%20trigonometr%C3%ADa/Apuntes/Apuntes%20notion%202024-1/Clase%2015%20AyT%20Progresiones%20aritme%CC%81ticas%20y%20geome%CC%81tricas.pdf) y [Listado 5 - AyT](file:///mnt/9b846436-0407-4e80-b8af-5417ffbdee8e/Universidad/Udec/Asignaturas%20pasadas/%C3%81lgebra%20y%20trigonometr%C3%ADa/Listados/2024-2/Listado%205-Ayt.pdf).
 
 | Día | Tema | Actividad / Meta | Recursos y Ejercicios Sugeridos |

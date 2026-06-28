@@ -1,0 +1,31 @@
+# System files
+.DS_Store
+[Tt]humbs.db
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# LaTeX compilation auxiliary files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.blg
+*.bbl
+*.pdfsync
+
+# Local IDE metadata
+.vscode/
+.idea/
+*.swp
+*.swo
